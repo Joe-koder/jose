@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SMARTSHOP.com | Best online shop in Kenya</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/76210ae99f.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="{{ url_for('home') }}">
+            <image src="{{url_for('static',filename = 'smartshop1.com.png')}}">
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+    <!---brands------->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <image src="{{url_for('static',filename = 'Huawei.png')}}"  width="75px" height="25px">
+          </div>
+          <div class="col-5">
+            <image src="{{url_for('static',filename = 'iphone.png')}}"  width="75px" height="25px">
+          </div>
+          <div class="col-5">
+            <image src="{{url_for('static',filename = 'samsung.jpg')}}"  width="75px" height="25px">
+          </div>
+          <div class="col-5">
+            <image src="{{url_for('static',filename = 'Nokia.png')}}"  width="75px" height="25px">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---footer------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <i class="fab fa-google-play"></i>
+            <h3>Download our app</h3>
+            <p>Download our app for android phone</p>
+            <image src="{{url_for('static',filename = 'google.png')}}" width="25px" height="25px">
+              <p>Coming Soon!</p>
+              <p>Download our app for ios mobile phone.</p>
+              <image src="{{url_for('static',filename = 'ios.png')}}" width="25px" height="25px">
+                <p>Coming Soon!</p>
+          </div>
+          <div class="footer-col-2">
+            <image src="{{url_for('static',filename = 'smartshop1.com.png')}}" width="125px">
+              <p>Our purpose is to make your digital life better <br>by equiping you with latest and classic electronic devices</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful links</h3>
+            <ul>
+              Coupons...Coming Soon! <br>
+              Blog post...Coming Soon! <br>
+              Return Policy....<a href="https://anaphylactic-bushel.000webhostapp.com/">click here</a> <br>
+              Join Affiliate...Coming Soon!
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+                <image src="{{url_for('static',filename = 'instagram.png')}}" width="25px" height="25px"> <br>
+               <a href=""></a>
+                <image src="{{url_for('static',filename = 'facebook.png')}}" width="25px" height="25px"> <br>
+              <a href="https://api.whatsapp.com/send/?phone=%2B254708964590&text&app_absent=0">
+                <image src="{{url_for('static',filename = 'whatsapp.jpeg')}}" width="25px" height="25px"> <br>
+              <a href="JosephM03506351: https://twitter.com/JosephM03506351?s=08">
+                  <image src="{{url_for('static',filename = 'twitter.jpeg')}}" width="25px" height="25px"> <br>
+                </a>
+
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright F17/1784/2019 - PROJECT:SMARTSHOP.com
+        </p>
+      </div>
+    </div>
+  </div>
+  <!---------js for toggle menu--------->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px"
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+
+</html>

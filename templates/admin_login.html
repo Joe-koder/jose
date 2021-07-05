@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% include 'header.html' %}
+
+{% block content %}
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word"><b><u>Login As an Admin</u></b></h1>
+             </div><br></br><br>
+            <h2 class="word">
+                <form action="{{ url_for('admin_login') }}" method="post">
+                  <div class="msg">{{ msg }}</div>
+                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/><br><br>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/><br><br><br>
+                    <input type="submit" class="btn" value="Login"><br><br>
+                </form>
+            </h2>
+          </div>
+        </div>
+    {% endblock %}

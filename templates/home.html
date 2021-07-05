@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% include 'header.html' %}
+
+{% block content %}
+
+<div class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-2">
+				<h1>Where Your Every <br>Coin Counts.</h1>
+				<p>You place your order,<br>we deliver at your doorstep the next morning.
+					<br>SMARTSHOP.com,your destiny of cool,fantastic,high class,latest,mind blowing,quality and affordable smartphones.
+					<br>To see available gadgets.....
+				</p>
+				<a href="{{ url_for('products') }}" class="btn">EXPLORE NOW &#8594;</a>
+			</div>
+			<div class="col-2">
+				<image src="{{url_for('static',filename = 'watch1a-1.jpg')}}">
+			</div>
+		</div>
+	</div>
+
+	<!---------on offer--------->
+	<div class="offer">
+		<div class="small-container">
+			<div class="row">
+				<div class="col2">
+					<image src="{{url_for('static',filename = 'watch2b-1.jpg')}}" class="offer-image">
+				</div>
+				<div class="col-2">
+					<p>Exclusively Available on SMARTSHOP.com</p>
+					<h1>Curren Watch</h1>
+					<small>Curren Fashion Watches Men's Watches Casual 8231
+						Brand: Curren </small>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<a href="{{ url_for('checkout') }}" class="btn">Buy Now &#8594;</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="small-container">
+			<div class="row row-2">
+					<h2>Related Products</h2>
+					<a href="{{ url_for('products') }}" class="btn"><p><b>View More  &#8594;</b></p></a>
+
+			</div>
+	</div>
+	<div class="small-container single-product">
+			<div class="row">
+					<div class="col-2">
+							<image src="{{url_for('static',filename = 'huawei1-1.jpg')}}" width="100%" id="productImage">
+							<div class="small-image-row">
+									<div class="small-image-col">
+											<image src="{{url_for('static',filename = 'huawei1-2.jpg')}}" width="75%%" class="small-image">
+									</div>
+									<div class="small-image-col">
+											<image src="{{url_for('static',filename = 'huawei1-4.jpeg')}}" width="75%" height="100%" class="small-image">
+									</div>
+									<div class="small-image-col">
+											<image src="{{url_for('static',filename = 'huawei1-5.jpeg')}}" width="75%" height="100%" class="small-image">
+									</div>
+							</div>
+					</div>
+					<div class="col-2">
+							<p>Home / Huawei</p>
+							<h1>Huawei P30 Lite</h1>
+							<h4>KSh 38,000</h4>
+							<select>
+									<option>Select Color</option>
+									<option>Select Blue</option>
+									<option>Select Purple</option>
+									<option>Select White</option>
+							</select>
+							<input type="number" value="1">
+						<a href="" class="btn">Add to Cart</a>
+							<h3>Product details <i class="fa fa-ident"></i></h3>
+							<p>Released 2019, April 25
+									159g, 7.4mm thickness
+									Android 9.0, up to Android 10, EMUI 10.0
+							64GB/128GB/256GB storage, microSDXC</p>
+					</div>
+			</div>
+	</div>
+	{% endblock %}

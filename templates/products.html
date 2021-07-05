@@ -1,0 +1,228 @@
+{% extends "layout.html" %}
+{% include 'header.html' %}
+
+{% block content %}
+
+<div class="small-container">
+  <div class="row row-2">
+    <h2>All Products</h2>
+    <select>
+      <option>Default Sorting</option>
+      <option>Sort by price</option>
+      <option>Sort by popularity</option>
+      <option>Sort by rating</option>
+      <option>Sort by sale</option>
+    </select>
+  </div>
+  <div class="row">
+    <div class="col-4">
+        <img src="{{url_for('static',filename = 'huawei1-1.jpg')}}" width="100%" height="150%">
+      <h4>Huawei P30 Lite <br>- 6.15",6GB +128GB , <br>48MP Triple Camera (Dual SIM),<br>Black.
+        <br>Brand: Huawei
+      </h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>KSh 38,000</p>
+      <a href="{{ url_for('checkout') }}" class="btn">Buy Now &#8594;</a>
+
+    </div>
+    <div class="col-4">
+      <img src="{{url_for('static',filename = 'iphone1-1.jpg')}}" width="100%" height="150%">
+      <h4>Apple IPhone 12 Pro
+        <br> Physical Dual Nano Sim <br>128gb White <br>Brand: Apple
+      </h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>KSh 195,000</p>
+    </div>
+    <div class="col-4">
+      <img src="{{url_for('static',filename = 'samsung1-1.jpg')}}" width="100%" height="150%">
+      <h4>Samsung Galaxy A32 <br>6.4″ - 128GB ROM + 6GB RAM <br>- Dual SIM <br>- Awesome Violet</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>KSh 34,999</p>
+    </div>
+    <div class="col-4">
+      <img src="{{url_for('static',filename = 'iphone2-1.jpg')}}" width="100%" height="150%">
+      <h4>Apple iPhone Xs Max,<br> 256GB + 4GB (Dual SIM), <br>Gold
+        <br>Brand: Apple
+      </h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>KSh 150,000</p>
+    </div>
+    <div class="col-4">
+      <img src="{{url_for('static',filename = 'huawei2-1.jpg')}}" width="100%" height="150%">
+      <h4>Huawei P30 Pro, <br>6.47", 256GB + 8GB RAM (Dual SIM), <br>4200mAh, Silver Frost
+        <br>Brand: Huawei
+      </h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>KSh 70,999</p>
+    </div>
+    <div class="col-4">
+      <img src="{{url_for('static',filename = 'watch1a-1.jpg')}}" width="100%" height="150%">
+      <h4>Fashion 735XT GPS+GLONASS Watch <br>Muti-Sport Smart Wristwatch br5ATM Heart Rate Monitor Map
+        brBrand: Fashion
+      </h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>KSh 91,030</p>
+    </div>
+    <div class="col-4">
+      <img src="{{url_for('static',filename = 'samsung2-1.jpg')}}" width="100%" height="150%">
+      <h4>Samsung Galaxy M31, 6.4", br128GB + 6GB RAM (Dual SIM), <br>6000mAh, Ocean Blue
+        <br>Brand: Samsung
+      </h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>KSh 40,999</p>
+    </div>
+    <div class="col-4">
+      <img src="{{url_for('static',filename = 'samsung3-1.jpg')}}" width="100%" height="150%">
+      <h4>Samsung Galaxy S21 Ultra 5G, <br>6.8", 256GB + 12GB RAM (Dual SIM), brPhantom Black
+        <br>Brand: Samsung
+      </h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>KSh 189,000</p>
+    </div>
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <image src="{{url_for('static',filename = 'huawei1-1.jpg')}}" width="100%" height="150%">
+                <h4>Huawei P30 Lite <br>- 6.15",6GB +128GB , <br>48MP Triple Camera (Dual SIM),<br>Black.
+                <br>Brand: Huawei
+                </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>KSh 38,000</p>
+            </div>
+            <div class="col-4">
+                <image src="{{url_for('static',filename = 'iphone1-1.jpg')}}" width="100%" height="150%">
+                <h4>Apple IPhone 12 Pro
+                <br> Physical Dual Nano Sim <br>128gb White <br>Brand: Apple
+                </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>KSh 195,000</p>
+            </div>
+            <div class="col-4">
+                <image src="{{url_for('static',filename = 'samsung1-1.jpg')}}" width="100%" height="150%">
+                <h4>Samsung Galaxy A32 <br>6.4″ - 128GB ROM + 6GB RAM <br>- Dual SIM <br>- Awesome Violet</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>KSh 34,999</p>
+            </div>
+            <div class="col-4">
+                <image src="{{url_for('static',filename = 'iphone2-1.jpg')}}" width="100%" height="150%">
+                <h4>Apple iPhone Xs Max,<br> 256GB + 4GB (Dual SIM), <br>Gold
+                <br>Brand: Apple
+                </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>KSh 150,000</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-4">
+      <img src="{{url_for('static',filename = 'samsung1-1.jpg')}}" width="100%" height="150%">
+      <h4>Samsung Galaxy A32 <br>6.4″ - 128GB ROM + 6GB RAM <br>- Dual SIM <br>- Awesome Violet</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>KSh 34,999</p>
+    </div>
+    <div class="col-4">
+      <img src="{{url_for('static',filename = 'watch2b-1.jpg')}}" width="100%" height="150%">
+      <h4>Curren Fashion Watches <br>Men's Watches Casual 8231
+        <br>Brand: Curren
+      </h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>KSh 2,999</p>
+    </div>
+
+  </div>
+  <div class="page-btn">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span> &#8594;</span>
+  </div>
+</div>
+
+
+{% endblock %}
